@@ -30,7 +30,6 @@ def ss(mol,startaa=1, visual="Y"):
 		bfacts.append(bfact)
 		cmd.alter("%s and resi %s and n. CA"%(mol,counter), "b=%s"%bfact)
 		counter=counter+1
-	cmd.save("%s_newBFactors.pdb"%mol, "%s"%mol)
 	if visual=="Y":
 		cmd.cartoon("automatic",mol)
 		cmd.spectrum("b","grey blue red", "%s and n. CA " %mol)
