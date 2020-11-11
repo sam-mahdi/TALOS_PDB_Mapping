@@ -1,7 +1,21 @@
 # TALOS_PDB_Mapping
-Will take both predSS and predS2 files via TALOS and color/map secondary structure or thickness
-
+Will take both predSS and predS2 files via TALOS and color/map secondary structure or thickness (There is no need to modify the files)
 This script contains 2 functions, an ss function and an S2 function. There are parameters for both that can (and should) be modified to obtain the desired colors/look. 
+
+***TO USE***
+For SS:
+ss molecule,starting amino acid
+```
+ss 1mmi,startaa=3
+```
+For S2
+```
+s2 1mmi,startaa=3
+```
+The starting amino acid determines what parts of the protein are getting colored. If you assigned a single domain for example (242-333), and the pdb is of the entire protein (1-333), then your startaa would be 242. Or vice versa your peaklist contains values from 1-333, and the protein is truncated (5-333) then your startaa would be 5. 
+
+
+
 
 ***SS function***
 This script will color the protein using the TALOS predicted secondary structure and their color scheming. Helices predicted in TALOS are red, and sheets blue. 
