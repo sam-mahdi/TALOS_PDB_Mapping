@@ -15,7 +15,7 @@ For S2
 ```
 s2 1mmi,startaa=3
 ```
-The starting amino acid determines what parts of the protein are getting colored. If you assigned a single domain for example (242-333), and the pdb is of the entire protein (1-333), then your startaa would be 242. Or vice versa your peaklist contains values from 1-333, and the protein is truncated (5-333) then your startaa would be 5. 
+The starting amino acid determines what parts of the protein are getting colored. If you assigned a single domain for example (242-333), and the pdb is of the entire protein (1-333), then your startaa would be 242. Or vice versa your peaklist contains values from 1-333, and the PDB of your protein is truncated (5-333) then your startaa would be 5. 
 
 
 
