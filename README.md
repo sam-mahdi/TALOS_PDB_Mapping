@@ -47,7 +47,7 @@ Thickness may be modified by altering line 64
 ```
 bfact=((1/(float(line)))-float(line))/1.5
 ```
-Pymol maps thickness from 0 being thinnest, and thickness increasing as the numbers increase. So you take the inverse of the S2 values to make the more dynamic regions (lower S2 values) thicker. Then I subtract by the same value so there is a bigger discrepancy between the rigid and dynamic values (i.e. Subtracting 0.5 from 1/0.5 is not as a big of a reduction as subtracting 0.8 from 0.8). However, this inversion means the very dynamic regions are going to be very thick, thus I divide by 1.5 to get the desired thickness. ***Its important to simply modify values relative to one another, as such you will still have a gradient of values rather than removing the values***. You may modify the above equation to give you a thickness you desire. 
+Pymol maps thickness from 0 being thinnest, and thickness increasing as the numbers increase. So you take the inverse of the S2 values to make the more dynamic regions (lower S2 values) thicker. Then I subtract by the same value so there is a bigger discrepancy between the rigid and dynamic values (i.e. Subtracting 0.5 from 1/0.5 is not as a big of a reduction as subtracting 0.8 from 0.8). However, this inversion means the very dynamic regions are going to be very thick, thus I divide by 1.5 to get the desired thickness. ***Its important to simply modify values relative to one another, as such you will still have a gradient of values, rather than removing the values***. You may modify the above equation to give you a thickness you desire. 
 
 The color that is mapped onto the protein is modified as above in the secondary structure portion. 
 
