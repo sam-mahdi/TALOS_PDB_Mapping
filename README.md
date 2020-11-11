@@ -5,6 +5,7 @@ This script contains 2 functions, an ss function and an S2 function. There are p
 The script is designed in a manner so it is easy to switch between the 2 functions (and thus looks) and thus ray trace them both in the same position without needing to do anything. I.E. You can switch between SS colors/look and S2 colors/look. 
 
 ***TO USE***
+
 For SS:
 ss molecule,starting amino acid
 ```
@@ -20,6 +21,7 @@ The starting amino acid determines what parts of the protein are getting colored
 
 
 ***SS function***
+
 This script will color the protein using the TALOS predicted secondary structure and their color scheming. Helices predicted in TALOS are red, and sheets blue. 
 
 You may change the color by modifying line 36:
@@ -38,6 +40,7 @@ There are multiple pre-set colors: https://pymolwiki.org/index.php/Spectrum
 And a looot of single colors: https://pymolwiki.org/index.php/Color_Values
 
 ***S2 function***
+
 This script will color and vary the thickness of the protein using the TALOS RCI Predicted S2 values. The more dynamic regions are thicker and red, the more rigid regions thinner and white.
 
 Thickness may be modified by altering line 64
