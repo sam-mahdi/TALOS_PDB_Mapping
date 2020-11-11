@@ -2,7 +2,7 @@
 Will take both predSS and predS2 files via TALOS and color/map secondary structure or thickness (There is no need to modify the files)
 This script contains 2 functions, an ss function and an S2 function. There are parameters for both that can (and should) be modified to obtain the desired colors/look. 
 
-The script is designed in a manner so it is easy to switch between the 2 functions (and thus looks) and thus ray trace them both in the same position without needing to do anything. I.E. You can switch between SS colors/look and S2 colors/look. 
+The script is designed in a manner so it is easy to switch between the 2 functions (and looks) and thus ray trace them both in the same position without needing to do anything. I.E. You can switch between SS colors/look and S2 colors/look. 
 
 ***TO USE***
 
